@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD-FireBase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body style="background-color: aliceblue;">
+<div class="container">
+    <div class="row min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="card shadow-lg " style="width: 24rem;">
+           <form class="p-3" id="none">
+              <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="Name">
+              </div>
+              <div class="mb-3">
+                <label for="Address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="Address">
+              </div>
+              <div class="mb-3">
+                <label for="RollNo" class="form-label">Roll-No</label>
+                <input type="text" class="form-control" id="RollNo">
+              </div>
+              <div class="mb-3">
+                <label for="Section" class="form-label">Section</label>
+                <input type="text" class="form-control" id="Section">
+              </div>
+                <div class="input-group mb-3">
+                <input type="file" class="form-control" id="fileinput" >
+
+              </div>
+              <div class="container d-flex justify-content-center align-items-center p-2">
+             
+                <button type="submit" class="btn btn-primary mx-2" id="Create">Create</button>
+                <button type="submit" class="btn btn-primary mx-2" id="Read">Read</button>
+                <button type="submit" class="btn btn-primary mx-2" id="Update">Update</button>
+                <button type="submit" class="btn btn-primary mx-2" id="Delete">Delete</button>
+    
+              </div>
+          </form>
+      </div>
+      <div class="card p-3 mx-5 col-4 shadow-lg" id="card2" style="display: none;">
+        <img src="" alt=""class="img-fluid" id="page-2-img" style="height:195px ;">
+         <h2 class="card p-2 text-center" id="Name-page-2"></h2>
+         <h2 class="card p-2 text-center" id="Address-page-2"></h2>
+         <h2 class="card p-2 text-center" id="RollNo-page-2"></h2>
+         <h2 class="card p-2 text-center" id="Section-page-2"></h2>
+       </div>
+  </div>
+</div>
+
+    
+<script type="module" src="crud.js"></script>
+</body>
+</html>
